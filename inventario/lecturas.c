@@ -53,29 +53,25 @@ float leerFlotanteEntre(char* mensaje, float min, float max) {
 
 char leerCaracter(char* mensaje) {
     char caracter;
-    printf("Ingrese un caracter: ");
+    printf("%s", mensaje);
     scanf(" %c", &caracter); // El espacio antes de %c es importante para ignorar los espacios en blanco y saltos de línea pendientes
     return caracter;
 }
 
-int leerenteromayorigual(char* mensaje, int limite){
+int leerenteromayorigual(char* mensaje, int limite) {
     int valor;
-       do {
+    do {
         printf("%s", mensaje);
         scanf("%d", &valor);
     } while (valor < limite);
     return valor;
-} 
+}
 
-float leerflotantemayorigual(char* mensaje, float limite){
+float leerflotantemayorigual(char* mensaje, float limite) {
     float valor;
-       do {
+    do {
         printf("%s", mensaje);
         scanf("%f", &valor);
     } while (valor < limite);
     return valor;
-} 
-
-
-
-    
+}

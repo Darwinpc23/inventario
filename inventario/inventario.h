@@ -1,8 +1,19 @@
-typedef struct {
-    char nombre[50];
-    int cantidad;
-    float precio;
-} Producto;
+#ifndef INVENTARIO_H
+#define INVENTARIO_H
 
-void agregarProducto(Producto productos[], int *contador, int maxProductos);
-void mostrarProductos(Producto productos[], int contador);
+void cargarProductos(char nombres[][50], int cantidades[], float precios[], int *contador, const char *nombreArchivo);
+void agregarProducto(char nombres[][50], int cantidades[], float precios[], int *contador, int maxProductos);
+void mostrarProductos(char nombres[][50], int cantidades[], float precios[], int contador);
+void buscarProducto(char nombres[][50], int cantidades[], float precios[], int contador);
+void editarProducto(char nombres[][50], int cantidades[], float precios[], int contador);
+void adicionarCompraProducto(char nombres[][50], int cantidades[], float precios[], int *contador, int maxProductos);
+void eliminarProducto(char nombres[][50], int cantidades[], float precios[], int *contador);
+
+#endif
+
+
+
+
+
+
+

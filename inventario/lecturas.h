@@ -1,17 +1,10 @@
-int leerEnteroPositivo(char*);
 
-int leerEntero(char*);
-
-int leerEnteroEntre(char*, int, int);
-
-int leerenteromayorigual(char*, int);
-
-float leerFlotante(char*);
-
-float leerFlotantePositivo(char*);
-
-float leerFlotanteEntre(char*, float, float);
-
-float leerflotantemayorigual(char*, float);
-
-char leerCaracter();
+int leerEnteroPositivo(char* mensaje);
+int leerEntero(char* mensaje);
+int leerEnteroEntre(char* mensaje, int min, int max);
+int leerenteromayorigual(char* mensaje, int limite);
+float leerFlotante(char* mensaje);
+float leerFlotantePositivo(char* mensaje);
+float leerFlotanteEntre(char* mensaje, float min, float max);
+float leerflotantemayorigual(char* mensaje, float limite);
+char leerCaracter(char* mensaje);
